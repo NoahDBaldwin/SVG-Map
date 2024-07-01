@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="svg-map-sub.component.css" />
+
+<div id="headers">
+  <h1>SVG Map</h1>
+  <h2>Country Info</h2>
+</div>
+<div id="container">
+  <div id="mapDiv">
+    <app-world-svg></app-world-svg>
+  </div>
+  <div id="infoDiv" *ngIf="aCountry">
+    <h3 class="countryInfo">Country Name:</h3>
+    <p class="infoP">{{ aCountry.name }}</p>
+    <h3 class="countryInfo">Country Capital:</h3>
+    <p class="infoP">{{ aCountry.capitalCity }}</p>
+    <h3 class="countryInfo">Country Region:</h3>
+    <p class="infoP">{{ aCountry.region.value }}</p>
+    <h3 class="countryInfo">Income Level:</h3>
+    <p class="infoP">{{ aCountry.incomeLevel.value }}</p>
+    <h3 class="countryInfo">Latitude:</h3>
+    <p class="infoP">{{ aCountry.longitude }}</p>
+    <h3 class="countryInfo">Longitude:</h3>
+    <p class="infoP">{{ aCountry.latitude }}</p>
+    <p id="the"></p>
+  </div>
+</div>
+<h3>Sources:</h3>
+<p class="sources">API from worldbank.org<br>
+  Map from https://mapsvg.com/maps/world</p>
+<script src="svg-map.ts"></script>
