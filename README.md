@@ -16,6 +16,7 @@ This project is an interactive SVG map that takes information from the worldbank
 <h2>Environments Used </h2>
 
 - <b>Windows 11</b>
+- <b>Visual Studio Code</b>
 
 <h2>Here is a video demonstration:</h2>
 
